@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant View</title>
+    <link rel= "stylesheet" href="../static/styles.css">
+    <script src="../static/script.js"></script>
+    <script src="../static/applicants.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="jobTitle">Job Title</h1>
+        </header>
+        <main>
+            <p id="jobDescription">Job Description</p> <!-- Job description displayed here -->
+            <h2>Add Applicant</h2>
+            <input type="text" id="applicantName" placeholder="Applicant Name" required>
+            <input type="number" id="applicantScore" placeholder="Score" required>
+            <button id="addApplicantButton">Add Applicant</button>
+
+            <h2>Applicants</h2>
+            <ul id="applicantList">
+                <!-- Applicant items will be inserted here by JavaScript -->
+            </ul>
+        </main>
+    </div>
+    <script src="../static/applicants.js"></script>
+</body>
+</html>

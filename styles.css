@@ -1,0 +1,148 @@
+body {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; /* Use a more modern font */
+    background-color: #292929; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improve readability */
+}
+
+.container {
+    max-width: 1200px; /* Increase width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+header {
+    color: #ff7f50;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+main {
+    flex: 2;
+    padding: 20px;
+}
+
+.job-listings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-posting {
+    background: #ffffff; /* White background for job postings */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Increased border-radius for a softer look */
+    padding: 20px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Added transform for hover effect */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.job-posting:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+header {
+    color: #ff7f50;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em; /* Increased font size for better visibility */
+    color: #ff7f50; /* Coral color for headings */
+}
+
+p {
+    margin: 10px 0;
+    color: #333; /* Darker text for better contrast */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for border */
+}
+
+input:focus {
+    border-color: #ff7f50; /* Highlight border on focus with orange */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: #ff7f50; /* Highlight border on focus with orange */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px;
+    background: #ff4500; /* Orange background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s; /* Added transform on hover */
+}
+
+button:hover {
+    background: #ff6347; /* Slightly lighter orange on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for modal */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 10px; /* Increased border-radius */
+    width: 60%;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333; /* Change close button color to dark */
+}
+
+

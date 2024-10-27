@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>applai</h1>
+            <button id="toggleViewButton">Switch to Applicant View</button>
+        </header>
+        <main>
+            <!-- Company View: Add Job Postings -->
+            <div id="companyView" class="view">
+                <h2>Add Job Posting</h2>
+                <form id="jobForm">
+                    <input type="text" id="jobTitle" placeholder="Job Title" required>
+                    <input type="text" id="companyName" placeholder="Company Name" required>
+                    <input type="text" id="location" placeholder="Location" required>
+                    <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+                    <button type="submit">Add Job Posting</button>
+                </form>
+                <div id="jobList" class="job-list"></div>
+            </div>
+
+            <!-- Applicant View: List of Jobs to Apply -->
+            <div id="applicantView" class="view" style="display: none;">
+                <h2>Available Job Postings</h2>
+                <div id="applicantJobList"></div>
+            </div>
+        </main>
+
+        <!-- Modal to Show Applicants for a Selected Job Posting -->
+        <div id="applicantModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h3>Applicants</h3>
+                <ul id="modalApplicantList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
